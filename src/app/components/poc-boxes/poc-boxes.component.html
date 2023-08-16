@@ -1,0 +1,8 @@
+<header class="navbar" [style.height.px]="navbarHeight">
+  HEADER
+</header>
+<div class="container" (window:resize)="calculateCardSize()" [style.height.px]="containerHeight"
+  [style.width.px]="containerWidth">
+  <div class="box" *ngFor="let card of cards; let i = index">
+  </div>
+</div>
